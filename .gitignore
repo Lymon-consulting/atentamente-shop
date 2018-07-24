@@ -1,0 +1,4 @@
+# exclude connection_files
+config.inc.php
+config.inc.prod.ame.php
+config.inc.prod.lymon.php
