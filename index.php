@@ -1,6 +1,6 @@
 <?php
-session_start(); //start session
-include("config.inc.php"); //include config file
+session_start(); //se activa la sesión del navegador
+include("config.inc.php"); //llama al archivo que contiene la configuración de la conexión a la base de datos y otros parámetros
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -8,11 +8,11 @@ include("config.inc.php"); //include config file
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="description" content="Tienda en línea de AtentaMente">
+<meta name="author" content="Luis Carlos Jiménez">
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Etiqueta global del sitio (gtag.js) - Utilizada para las métricas de Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122684734-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -25,10 +25,13 @@ include("config.inc.php"); //include config file
 
 <title>Tienda en Línea AtentaMente</title>
 
+<!--Estilos globales del sitio-->
 <link href="style/style.css" rel="stylesheet" type="text/css">
+
+<!--Incluye bootstrap como framework para el front-end-->
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom fonts for this template -->
+<!-- Fuentes especiales para esta plantilla -->
 <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -36,11 +39,13 @@ include("config.inc.php"); //include config file
 
 <!-- Plugin CSS -->
 <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-<!-- Custom styles for this template -->
+<!-- Estilos personalizados para esta plantilla -->
 <link href="style/creative.min.css" rel="stylesheet">
 
+<!--Se incluye jquery para ciertas funciones especiales-->
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 
+<!--Código que recupera los valores de la lista desplegable de categorías-->
 <script>
 $(document).ready(function(){	
 
@@ -148,22 +153,23 @@ if(isset($_SESSION["products"])){
 
 
 <?php
-//List products from database
+//Establece la codificación de la base de datos en utf8 para procesar acentos y caracteres especiales
 $acentos = $mysqli_conn->query("SET NAMES 'utf8'");
+//Obtiene la lista de todos los productos de la base de datos, ordenada por el campo product_order
 $results = $mysqli_conn->query("SELECT id, product_name, product_desc, product_code, product_image, product_price, product_large FROM products_list ORDER BY product_order");
 
+//Intercepta cualquier error en la conexión de la base de datos
 if (!$results){
     printf("Error: %s\n", $mysqli_conn->error);
     exit;
 }
 
+
+//Despliega la lista de artículos encontrados
+
 echo "<div id=\"store\"><div>";
-
-//Display fetched records as you please
 //$products_list =  '<ul class="products-wrp">';
-
 echo "<ul class=\"products-wrp\">";
-
 echo "<div class=\"container\">";
   echo "<div class=\"row\">";
 

@@ -134,11 +134,12 @@ if(isset($_SESSION["products"])){
 
 $id = htmlspecialchars($_GET["id"]);
 
-//List products from database
-
+//Recupera los datos del producto cuyo id obtiene de la URL del navegador
 $strQuery = "SELECT id, product_name, product_desc, product_code, product_image, product_price, product_large FROM products_list WHERE id=" . $id;
 $acentos = $mysqli_conn->query("SET NAMES 'utf8'");
 $results = $mysqli_conn->query($strQuery);
+
+//Intercepta cualquier error en la conexión de la base de datos
 if (!$results){
     printf("Error: %s\n", $mysqli_conn->error);
     exit;
@@ -146,7 +147,7 @@ if (!$results){
 
 echo "<div id=\"store\"><div>";
 
-//Display fetched records as you please
+//Despliega el producto encontrado
 //$products_list =  '<ul class="products-wrp">';
 
 echo "<ul class=\"products-wrp\">";

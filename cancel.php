@@ -1,7 +1,4 @@
-<?php
-session_start(); //start session
-include("config.inc.php"); //include config file
-?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -42,14 +39,6 @@ include("config.inc.php"); //include config file
   <h2 class="mb-4">Política de Devolución</h2>
 </div>
 </section>
-
-    
-
-
-
-
-
-
 
 
 <div class="col-sm">
