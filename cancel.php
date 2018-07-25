@@ -79,7 +79,7 @@
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
             <p>
-              <a href="mailto:info@atentamente.org.mx">help@atentamente.org.mx</a>
+              <a href="mailto:ayuda@atentamente.org.mx">ayuda@atentamente.org.mx</a>
             </p>
           </div>
         </div>
