@@ -116,14 +116,51 @@ if(isset($_SESSION["products"])){
     </nav>
  -->
 
-  <section class="bg-dark text-white">
-<div class="container text-center">
-  <h2 class="mb-4">Detalles del producto</h2>
+<div class="header-row" id="header-row" style="padding: 0px; overflow:hidden; height:320px;">
+        <!-- container-fluid is the same as container but spans a wider viewport, 
+    it still has padding though so you need to remove this either by adding 
+    another class with no padding or inline as I did below -->
+   <div class="container-fluid" style="padding: 0px;">
+      <div class="row"> 
+        <!-- You originally has it set up for two columns, remove the second 
+    column as it is unneeded and set the first to always span all 12 columns 
+    even when at its smallest (xs). Set the overflow to hidden so no matter 
+    the height of your image it will never show outside this div-->
+         <div class="col-xs-12"> 
+            <a class="navbar-brand logo" href="index.php">
+        <!-- place your image here -->
+               <img src="images/image1.png" class="img-fluid" alt="AtentaMente" style="width: 100%;">
+            </a> 
+         </div>     
+      </div>
+   </div>
 </div>
-</section>
 
+
+<div class="container">
+   
+
+</div>
+
+<!--
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+</div>
     
-
+-->
 
 
 
@@ -187,29 +224,27 @@ echo "</ul></div>";
 
 
 
-   <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">¡Queremos saber de ti!</h2>
-            <hr class="my-4">
-            <p class="mb-5">¿Estás interesado en algún otro curso? Llámanos o envíanos un correo y te contactaremos tan pronto sea posible.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>+52 55 9688 6479</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="mailto:ayuda@atentamente.org.mx">ayuda@atentamente.org.mx</a>
-            </p>
-          </div>
-        </div>
+<footer id="footer">
+<div class="container mx-auto">
+  <div class="row">    
+    <div class="col-xs-6 col-sm-6 col-md-6 column">          
+         <h4 class="footer-text">Políticas</h4>
+        <ul class="list-group">
+          <li ><a href="cancel.php">Política de Cancelación</a></li>
+          <li ><a href="#">Política de Entrega</a></li>
+        </ul> 
       </div>
-    </section>
+    <div class="col-xs-6 col-md-6 column">          
+         <h4 class="footer-text">¿Cómo podemos ayudarte?</h4>
+        <ul class="nav">
+          <li><a href="mailto:ayuda@atentamente.org.mx">ayuda@atentamente.org.mx</a></li>
+        </ul> 
+      </div>
+      
+    
+  </div>
+</div>
+</footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

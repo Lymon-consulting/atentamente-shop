@@ -1,11 +1,16 @@
 body {
-	background-color: #F9F9F9;
 	font-family: 'Open Sans','Helvetica Neue', Arial, sans-serif;
 }
+
 h4{
    font-family: 'Open Sans','Helvetica Neue', Arial, sans-serif;
-   font-size: 9px;
+   font-size: 8px;
 }
+
+.product-title{
+   font-size:18px;
+}
+
 ul.products-wrp {
 	list-style: none;
 	padding: 0;
@@ -179,4 +184,37 @@ hr{
    font-size: 14px;
    font-family: 'Open Sans','Helvetica Neue', Arial, sans-serif;  
    margin-left: 5px;
+}
+
+
+
+
+.blog .carousel-indicators {
+   left: 0;
+   top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}
+
+footer {
+ padding-top:20px;
+ padding-bottom:20px;
+ background-color:#242424;
+}
+
+.footer-text{
+   size: 18px;
+   color:#FFF;
 }
