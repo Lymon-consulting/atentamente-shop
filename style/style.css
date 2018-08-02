@@ -8,7 +8,8 @@ h4{
 }
 
 .product-title{
-   font-size:18px;
+   font-family: 'Brandon Medium','Open Sans','Helvetica Neue', Arial, sans-serif;
+   font-size:20px;
 }
 
 ul.products-wrp {
@@ -174,15 +175,15 @@ hr{
 
 .description{
    text-align: left;
-   font-size: 12px;
-   font-family: 'Open Sans','Helvetica Neue', Arial, sans-serif;
+   font-size: 16px;
+   font-family: 'Brandon Regular','Open Sans','Helvetica Neue', Arial, sans-serif;
    margin-left: 5px;
 }
 
 .price{
    text-align: left;
    font-size: 14px;
-   font-family: 'Open Sans','Helvetica Neue', Arial, sans-serif;  
+   font-family: 'Brandon Bulk Italic', 'Open Sans','Helvetica Neue', Arial, sans-serif;  
    margin-left: 5px;
 }
 
@@ -217,4 +218,80 @@ footer {
 .footer-text{
    size: 18px;
    color:#FFF;
+}
+
+
+
+
+@font-face {
+   font-family: "Brandon Bold";
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/Brandon_bld.otf") format("truetype") , url("fonts/Brandon_bld.otf");
+}
+@font-face {
+   font-family: "Brandon Bold Italic";
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/Brandon_bld_it.otf") format("truetype") , url("fonts/Brandon_bld_it.otf");
+}
+@font-face {
+   font-family: "Brandon Bulk";
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/Brandon_blk.otf") format("truetype") , url("fonts/Brandon_blk.otf");
+}
+@font-face {
+   font-family: "Brandon Bulk Italic";
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/Brandon_blk_it.otf") format("truetype") , url("fonts/Brandon_blk_it.otf");
+}
+@font-face {
+   font-family: "Brandon Light";
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/Brandon_light.otf") format("truetype") , url("fonts/Brandon_light.otf");
+}
+@font-face {
+   font-family: "Brandon Light Italic";
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/Brandon_light_it.otf") format("truetype") , url("fonts/Brandon_light_it.otf");
+}
+@font-face {
+   font-family: "Brandon Medium";
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/Brandon_med.otf") format("truetype") , url("fonts/Brandon_med.otf");
+}
+@font-face {
+   font-family: "Brandon Medium Italic";
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/Brandon_med_it.otf") format("truetype") , url("fonts/Brandon_med_it.otf");
+}
+@font-face {
+   font-family: "Brandon Regular";
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/Brandon_reg.otf") format("truetype") , url("fonts/Brandon_reg.otf");
+}
+@font-face {
+   font-family: "Brandon Regular Italic";
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/Brandon_reg_it.otf") format("truetype") , url("fonts/Brandon_reg_it.otf");
+}
+@font-face {
+   font-family: "Brandon Thin";
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/Brandon_thin.otf") format("truetype") , url("fonts/Brandon_thin.otf");
+}
+@font-face {
+   font-family: "Brandon Thin Italic";
+   font-style: normal;
+   font-weight: normal;
+   src: url("fonts/Brandon_thin_it.otf") format("truetype") , url("fonts/Brandon_thin_it.otf");
 }

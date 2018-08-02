@@ -137,10 +137,10 @@ if(isset($_SESSION["products"])){
 </div>
 
 
-<div class="container">
+<div class="container mx-auto">
    
 
-</div>
+
 
 <!--
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -172,7 +172,7 @@ if(isset($_SESSION["products"])){
 $id = htmlspecialchars($_GET["id"]);
 
 //Recupera los datos del producto cuyo id obtiene de la URL del navegador
-$strQuery = "SELECT id, product_name, product_desc, product_code, product_image, product_price, product_large FROM products_list WHERE id=" . $id;
+$strQuery = "SELECT id, product_name, product_desc, product_code, product_image, product_price, product_large, product_banner FROM products_list WHERE id=" . $id;
 $acentos = $mysqli_conn->query("SET NAMES 'utf8'");
 $results = $mysqli_conn->query($strQuery);
 
@@ -189,27 +189,44 @@ echo "<div id=\"store\"><div>";
 
 echo "<ul class=\"products-wrp\">";
 
-echo "<div class=\"container\">";
-  echo "<div class=\"row\">";
+echo "<div class=\"container mx-auto\">";
+  echo "<div class=\"row mx-auto\">";
 
 $row = $results->fetch_assoc();
 ?>
-<div class="col-sm">
-   <li>
-      <!--<form class="form-item">-->
-      <h4><?=$row["product_name"]?></h4>
-      <div><img src="images/<?=$row["product_image"]?>"></div>
-      
-      <div class="description"><br><?=$row["product_large"]?></div>
-      <div class="price">Precio : <?=$currency?> <?=$row["product_price"]?><div>
-      <div class="item-box">
-         
-          <input name="product_code" type="hidden" value="<?=$row["product_code"]?>">
-          <a class="btn" href="https://atentamente.iliux.com/shop/view_cart.php?item=<?=$row["product_code"]?>">Comprar</a>
-          <a href="index.php" class="btn btn-outline-secondary" role="button" aria-pressed="true">Regresar a la tienda</a>
+
+<div class="container">
+   <div class="row">
+      <div class="col-md-10">
+         <li>
+            <!--<form class="form-item">-->
+            <h4><?=$row["product_name"]?></h4>
+            <?php
+              if ($row["product_banner"]!=null and strlen($row["product_banner"])>0){ 
+            ?>
+               <div><img src="images/<?=$row["product_banner"]?>"></div>
+            <?php
+              }
+              else{ 
+            ?>
+               <div><img src="images/<?=$row["product_image"]?>"></div>
+            <?php
+              }
+            ?>
+            
+            
+            <div class="description"><br><?=$row["product_large"]?></div>
+            <div class="price">Precio : <?=$currency?> <?=$row["product_price"]?><div>
+            <div class="item-box">
+               
+                <input name="product_code" type="hidden" value="<?=$row["product_code"]?>">
+                <a class="btn" href="https://atentamente.iliux.com/shop/view_cart.php?item=<?=$row["product_code"]?>">Comprar</a>
+                <a href="index.php" class="btn btn-outline-secondary" role="button" aria-pressed="true">Regresar a la tienda</a>
+            </div>
+            <!--</form>-->
+         </li>
       </div>
-      <!--</form>-->
-   </li>
+   </div>
 </div>
 <?php
 
@@ -223,7 +240,7 @@ echo "</ul></div>";
 ?>
 
 
-
+</div>
 <footer id="footer">
 <div class="container mx-auto">
   <div class="row">    

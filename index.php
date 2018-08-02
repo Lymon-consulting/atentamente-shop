@@ -172,7 +172,7 @@ if(isset($_SESSION["products"])){
     </header>
 --> 
 
-<div class="header-row" id="header-row" style="padding: 0px; overflow:hidden; height:320px;">
+<div class="header-row" id="header-row">
         <!-- container-fluid is the same as container but spans a wider viewport, 
     it still has padding though so you need to remove this either by adding 
     another class with no padding or inline as I did below -->
@@ -185,7 +185,7 @@ if(isset($_SESSION["products"])){
          <div class="col-xs-12"> 
             <a class="navbar-brand logo" href="index.php">
         <!-- place your image here -->
-               <img src="images/image1.png" class="img-fluid" alt="AtentaMente" style="width: 100%;">
+               <img src="images/banner_tienda.jpg" class="img-fluid" alt="AtentaMente">
             </a> 
          </div>     
       </div>
@@ -260,7 +260,9 @@ if(isset($_SESSION["products"])){
           <option value="0">Todo</option>
           <option value="1">Cursos</option>
           <option value="2">Libros</option>
-          <option value="3">Otros</option>
+          <option value="3">Retiros</option>
+          <option value="4">Eventos</option>
+          <option value="100">Otros</option>
         </select>
       </div>
        
