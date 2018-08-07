@@ -346,7 +346,7 @@ while($row = $results->fetch_assoc()) {
    <li>
       <!--<form class="form-item">-->
       <h4 class="product-title"><a href="details.php?id=<?=$row["id"]?>"><?=$row["product_name"]?></a></h4>
-      <div><a href="details.php?id=<?=$row["id"]?>"><img src="images/<?=$row["product_image"]?>"></a></div>
+      <div><a href="details.php?id=<?=$row["id"]?>"><img src="images/products/<?=$row["product_image"]?>"></a></div>
       <div class="description"><br><?=$row["product_desc"]?></div>
       <div class="price">Precio : <?=$currency?> <?=$row["product_price"]?> <?php if($row["id"]==1) echo " (Incluye 3 licencias)"; ?> <div>
       <?php if($row["id"]==1) echo "<div class='price'>Licencia adicional $ 1750</div>"; ?>

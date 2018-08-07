@@ -204,12 +204,12 @@ $row = $results->fetch_assoc();
             <?php
               if ($row["product_banner"]!=null and strlen($row["product_banner"])>0){ 
             ?>
-               <div><img src="images/<?=$row["product_banner"]?>"></div>
+               <div><img src="images/products/<?=$row["product_banner"]?>"></div>
             <?php
               }
               else{ 
             ?>
-               <div><img src="images/<?=$row["product_image"]?>"></div>
+               <div><img src="images/products/<?=$row["product_image"]?>"></div>
             <?php
               }
             ?>
