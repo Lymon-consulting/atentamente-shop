@@ -348,15 +348,15 @@ while($row = $results->fetch_assoc()) {
       
       <?php
          if ($row["id"]==11){ ?>
-      <h4 class="product-title"><a href="landing-page.html"><?=$row["product_name"]?></a></h4>
-      <div><a href="landing-page.html"><img src="images/products/<?=$row["product_image"]?>"></a></div>
+      <h4 class="product-title"><a href="details-landing.php"><?=$row["product_name"]?></a></h4>
+      <div><a href="details-landing.php"><img src="images/products/<?=$row["product_image"]?>"></a></div>
 
       <?php
          }
          else if($row["id"]==12){
       ?>  
-      <h4 class="product-title"><a href="landing-page.html"><?=$row["product_name"]?></a></h4>
-      <div><a href="landing-page.html"><img src="images/products/<?=$row["product_image"]?>"></a></div>
+      <h4 class="product-title"><a href="details-landing.php"><?=$row["product_name"]?></a></h4>
+      <div><a href="details-landing.php"><img src="images/products/<?=$row["product_image"]?>"></a></div>
       <?php
          }
          else{
@@ -381,7 +381,7 @@ while($row = $results->fetch_assoc()) {
            if ($row["product_large"]!=null and strlen($row["product_large"])>0){
             //echo "<button type=\"button\">Más información</button>";
                if ($row["id"]==11 || $row["id"]==12){
-                  echo "<a class='btn' href='landing-page.html'>Más información</a>";
+                  echo "<a class='btn' href='details-landing.php'>Más información</a>";
                }
                else{
                   echo "<a class='btn' href='details.php?id=" . $row["id"] . "'>Más información</a>";
