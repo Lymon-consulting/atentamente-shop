@@ -345,11 +345,34 @@ while($row = $results->fetch_assoc()) {
 <div class="col-sm">
    <li>
       <!--<form class="form-item">-->
+      
+      <?php
+         if ($row["id"]==11){ ?>
+      <h4 class="product-title"><a href="landing-page.html"><?=$row["product_name"]?></a></h4>
+      <div><a href="landing-page.html"><img src="images/products/<?=$row["product_image"]?>"></a></div>
+
+      <?php
+         }
+         else if($row["id"]==12){
+      ?>  
+      <h4 class="product-title"><a href="landing-page.html"><?=$row["product_name"]?></a></h4>
+      <div><a href="landing-page.html"><img src="images/products/<?=$row["product_image"]?>"></a></div>
+      <?php
+         }
+         else{
+      ?>      
       <h4 class="product-title"><a href="details.php?id=<?=$row["id"]?>"><?=$row["product_name"]?></a></h4>
       <div><a href="details.php?id=<?=$row["id"]?>"><img src="images/products/<?=$row["product_image"]?>"></a></div>
+
+      <?php
+      }
+      ?>
+
+    
+      
       <div class="description"><br><?=$row["product_desc"]?></div>
       <div class="price">Precio : <?=$currency?> <?=$row["product_price"]?> <?php if($row["id"]==1) echo " (Incluye 3 licencias)"; ?> <div>
-      <?php if($row["id"]==1) echo "<div class='price'>Licencia adicional $ 1750</div>"; ?>
+      <?php if($row["id"]==1) echo "<div class='price'>Licencia adicional $ 1750</div>"; ?> <?php if($row["id"]==13) echo " (Precio con descuento del 15% hasta agosto 17)"; ?> <div> <?php if($row["id"]==1) echo " (Incluye 3 licencias)"; ?> <div> <?php if($row["id"]==14 || $row["id"]==15 || $row["id"]==16 || $row["id"]==17) echo " (Precio por pronto pago hasta el 17 de septiembre)"; ?> <div>
       <div class="item-box">
          
           <input name="product_code" type="hidden" value="<?=$row["product_code"]?>">
@@ -357,7 +380,12 @@ while($row = $results->fetch_assoc()) {
           <?php
            if ($row["product_large"]!=null and strlen($row["product_large"])>0){
             //echo "<button type=\"button\">Más información</button>";
-            echo "<a class='btn' href='details.php?id=" . $row["id"] . "'>Más información</a>";
+               if ($row["id"]==11 || $row["id"]==12){
+                  echo "<a class='btn' href='landing-page.html'>Más información</a>";
+               }
+               else{
+                  echo "<a class='btn' href='details.php?id=" . $row["id"] . "'>Más información</a>";
+               }
            }
            ?>
       </div>
