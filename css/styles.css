@@ -1,24 +1,22 @@
-@charset "utf-8";
+/*
+Last Updated: August 7, 2018 at 8:12:52 PM
 
-/* CSS Document */
+HTML5 - CSS3 - Paulina Garza - Artenativa S.A. de C.V.
 
-/* HTML5 -  CSS3 - Paulina Garza - Artenativa S.A. de C.V. - 2018
+www.artenativa.com.mx
 */
 
-/*  =====  HTML / BODY  =====  */
-
+@charset "utf-8";
 body,
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     font-weight: 400;
     color: #3f3f40;
-    /* FIX PARA FUENTE -- 400 APARECIENDO COMO 700 EN FF */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* ==== */
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 header,
@@ -30,31 +28,31 @@ aside,
 footer,
 figure,
 figcaption {
-    display: block;
+    display: block
 }
 
 img {
-    border: none;
-    margin: 0;
+    border: 0;
+    margin: 0
 }
 
 a {
     color: #faa322;
     font-weight: 300;
     text-decoration: none;
-    transition: all ease-out 0.4s;
-    -moz-transition: all ease-out 0.4s;
-    -webkit-transition: all ease-out 0.4s;
+    transition: all ease-out .4s;
+    -moz-transition: all ease-out .4s;
+    -webkit-transition: all ease-out .4s
 }
 
 a:hover {
-    color: #000000;
+    color: #000
 }
 
 h1 {
     margin: 0;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 500
 }
 
 h2 {
@@ -65,103 +63,78 @@ h2 {
     padding-right: 8px;
     padding-left: 20px;
     padding-bottom: 0;
-    padding-top: 10;
+    padding-top: 10
 }
-
-h3 {}
-
-h4 {}
-
-
-/*  =====  HEAD  =====  */
 
 header {
     width: 100%;
-    height: 450px;
+    height: 475px;
     padding: 0;
-    background: #989c9d;
+    background: #989c9d
 }
 
 header .imagen {
     width: 17%;
-    height: 450px;
+    height: 450px
 }
 
 header .titulo {
     width: 70%;
     padding-top: 0;
     padding-left: 30px;
-    height: auto;
+    height: auto
 }
 
 header .titulo {
-    margin: 0;
+    margin: 0
 }
 
 header .titulo .el {
     font-size: 65px;
-    line-height: 130px;
+    line-height: 130px
 }
 
 header .titulo .bienestar {
     font-size: 95px;
     letter-spacing: -10px;
     line-height: 0;
-    height: 95px;
 }
 
 header .titulo .es {
     font-size: 45px;
-    line-height: 0;
+    line-height: 0
 }
 
 header .titulo .lo {
     font-size: 65px;
-    line-height: 70px;
+    line-height: 70px
 }
 
 header .titulo .vive {
     font-size: 35px;
     font-weight: 600;
     letter-spacing: 1px;
-    line-height: 0;
+    line-height: 75%;
 }
 
 header .video {
     padding: 25px;
-    padding-top: 90px;
+    padding-top: 90px
 }
 
 header .video iframe {
     padding-left: 25px;
     width: 47%;
-    height: 250px;
-
+    height: 250px
 }
-
-
-/*  =====  NAV  =====  */
-
-nav {}
-
-nav ul {}
-
-nav ul li {}
-
-nav ul li a {}
-
-nav ul li a:hover {}
-
-
-/*  =====  CONTENTS  =====  */
 
 div {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 .fondo {
-    background: #bcbdc0;
+    background: #bcbdc0
 }
 
 .taller {
@@ -169,37 +142,37 @@ div {
     color: #3f3f40;
     padding: 60px;
     padding-bottom: 31px;
-    width: 41%;
+    width: 41%
 }
 
 .taller h2 {
     color: #ea4d39;
     padding-left: 0;
-    padding-top: 5px;
-
+    padding-top: 5px
 }
 
 .taller h3 {
     margin: 0;
     font-size: 35px;
-    font-weight: 400;
+    font-weight: 400
 }
 
 .taller p {
-    line-height: 30px;
+    line-height: 125%;
+    font-size: 22px;
 }
 
 .taller .titulo {
     width: 100%;
-    padding: 0;
+    padding: 0
 }
 
 .padding0 {
-    padding: 0;
+    padding: 0
 }
 
 div {
-    margin: 0;
+    margin: 0
 }
 
 .cabecera .texto {
@@ -207,106 +180,102 @@ div {
 }
 
 .cabecera {
+    padding-top: 25px;
     background: #ea4d39;
-    color: #ffffff;
+    color: #fff;
 }
-
 
 .cabecera .cuatro p {
     width: 40%;
     font-weight: 700;
     font-size: 250px;
     text-align: right;
-    margin: 0;
+    margin: -90px 0 50px 0;
     letter-spacing: 0;
     padding-left: 50px;
-    height: 250px;
-
+    height: 250px
 }
 
 .cabecera .texto p {
     font-size: 50px;
     line-height: 55px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .cabecera .duracion {
-    width: 100%;
+    width: 100%
 }
 
 .cuerpo {
-    padding-top: 30px;
+    padding-top: 30px
 }
 
 .sabados {
     width: 49%;
-    height: 100%;
+    height: 100%
 }
 
 .sabados .cuerpo {
     background: #abdacf;
     color: #404041;
     padding: 25px;
-    padding-right: 100px;
+    padding-right: 100px
 }
 
 .sabados .cuerpo .uno {
-    color: #ea4d39;
+    color: #ea4d39
 }
 
 .sabados .cuerpo .dos {
     margin-bottom: 0;
-    font-size: 30px;
+    font-size: 30px
 }
 
 .sabados .cuerpo .tres {
     color: #ea4d39;
     margin-top: 0;
-    font-size: 41px;
+    font-size: 41px
 }
 
 .sabados .cuerpo .cuatro {
     margin-top: 0;
     font-size: 40px;
     line-height: 40px;
-    font-weight: 300;
+    font-weight: 300
 }
 
 .sabados .cuerpo .cinco {
     padding-top: 5px;
-    padding-left: 90px;
+    padding-left: 90px
 }
-
 
 .info {
     background: #bcbdc0;
     line-height: 30px;
     padding: 20px 0;
-    width: 100%;
+    width: 100%
 }
 
 .info p {
-    margin: 0px;
-    font-size: 20px;
+    margin: 0;
+    font-size: 20px
 }
 
 .info .titulo {
     color: #ea4d39;
-    padding: 0;
+    padding: 0
 }
 
 .info .caja.forthPage {
     width: -moz-calc(25% - 30px);
     width: -webkit-calc(25% - 30px);
-    width: calc(25% - 30px);
-
+    width: calc(25% - 30px)
 }
 
 .info .caja {
     min-height: 180px;
     position: relative;
-    padding: 15px;
-
+    padding: 15px
 }
 
 .info .caja::after {
@@ -320,102 +289,86 @@ div {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%)
 }
 
 .info div:last-of-type.caja::after {
-    display: none;
+    display: none
 }
 
 .temario {
     background: #f5bb46;
-    padding: 25px;
+    padding: 25px
 }
 
 .temario h2 {
-    color: #ffffff;
-    padding-top: 30px;
-
-
+    color: #fff;
+    padding-top: 30px
 }
 
 .temario .img {
-    padding-top: 25px;
+    padding-top: 25px
 }
-
 
 ol li {
-    color: #ffffff;
+    color: #fff
 }
 
-
-
 .fotos {
-    height: 260px;
+    height: 260px
 }
 
 .testimoniales {
     background: #abdacf;
-    padding: 30px;
+    padding: 30px
 }
 
 .titulo {
-    padding-bottom: 25px;
-
+    padding-bottom: 25px
 }
 
 .testimoniales h2 {
     color: #ea4d39;
-    padding-top: 30px;
+    padding-top: 30px
 }
 
 .testimoniales .texto {
-    line-height: 30px;
+    line-height: 125%;
     padding: 0 20px;
     margin: 0;
+    font-size: 20px;
 }
 
 .testimoniales .img {
-    padding-top: 20px;
+    padding-top: 20px
 }
 
 .testimoniales .uno {
-    padding-top: 10px;
+    padding-top: 15px
 }
 
 .testimoniales .dos {
-    padding-top: 10px;
+    padding-top: 15px
 }
 
 .testimoniales .tres {
-    padding-top: 70px;
+    padding-top: 15px
 }
 
-
-/*  =====  FOOTER  =====  */
-
-footer {}
-
-.footContent {}
-
-/*  =====  MISC  =====  */
-
-.tema {}
-
 .gris {
-    color: #3f3f40;
+    color: #3f3f40
 }
 
 .azul {
-    color: #016199;
+    color: #016199
 }
 
 .blanco {
-    color: #ffffff;
+    color: #fff
 }
 
 .wrapper {
-    width: 1200px;
+    width: 1200px
 }
 
 a.cta {
@@ -425,7 +378,7 @@ a.cta {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 22px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
     background: #292562;
@@ -433,13 +386,13 @@ a.cta {
     -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.4);
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    transform: translateX(-50%)
 }
 
 a.cta:hover {
     padding: 25px 45px;
-    color: #FFFFFF;
-    background: #291dd8;
+    color: #fff;
+    background: #291dd8
 }
 
 a.cta-medium {
@@ -449,7 +402,7 @@ a.cta-medium {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 22px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
     background: #906d31;
@@ -457,548 +410,427 @@ a.cta-medium {
     -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.4);
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    transform: translateX(-50%)
 }
 
 a.cta-medium:hover {
     padding: 25px 45px;
-    color: #FFFFFF;
-    background: #b57609;
+    color: #fff;
+    background: #b57609
 }
 
 .thirdPage {
-    width: 33.3333%;
+    width: 33.3333%
 }
 
 .halfPage {
-    width: 48%;
+    width: 48%
 }
 
 .twoThirdPage {
-    width: 66.6666%;
+    width: 66.6666%
 }
 
 .forthPage {
-    width: 25%;
+    width: 25%
 }
 
 .txtBold {
-    font-weight: 800;
+    font-weight: 800
 }
 
 .txtCenter {
-    text-align: center;
+    text-align: center
 }
 
 .txtRight {
-    text-align: right;
+    text-align: right
 }
 
 .left {
-    float: left;
+    float: left
 }
 
 .right {
-    float: right;
+    float: right
 }
 
 .marginVertical {
-    margin: 25px auto;
+    margin: 25px auto
 }
 
 .marginHorizontal {
-    margin: auto 25px;
+    margin: auto 25px
 }
 
 .opacity {
     opacity: .8;
-    transition: all ease-out 0.2s;
-    -moz-transition: all ease-out 0.2s;
-    -webkit-transition: all ease-out 0.2s;
+    transition: all ease-out .2s;
+    -moz-transition: all ease-out .2s;
+    -webkit-transition: all ease-out .2s
 }
 
 .opacity:hover {
     opacity: 1;
-    transition: all ease-out 0.2s;
-    -moz-transition: all ease-out 0.2s;
-    -webkit-transition: all ease-out 0.2s;
+    transition: all ease-out .2s;
+    -moz-transition: all ease-out .2s;
+    -webkit-transition: all ease-out .2s
 }
 
 .clearFix:after {
     display: block;
     content: " ";
     height: 0;
-    clear: both;
+    clear: both
 }
 
-
-/*  =====  RESPONSIVE - 1199px > 769px - Medium Screen =====  */
-
 @media screen and (max-width:1199px) and (min-width:769px) {
-
     .wrapper {
-        width: 100%;
+        width: 100%
     }
-
-    /*  =====  HEAD  =====  */
     header {
         width: 100%;
         height: 450px;
         padding: 0;
-        background: #989c9d;
+        background: #989c9d
     }
-
     header .imagen {
         width: 0;
-        height: 450px;
+        height: 450px
     }
-
     header .titulo {
         width: 70%;
         padding-top: 0;
         height: auto;
         padding: 0;
-        padding-left: 30px;
+        padding-left: 30px
     }
-
     header .titulo {
-        margin: 0;
+        margin: 0
     }
-
     header .titulo .el {
         font-size: 55px;
-        line-height: 130px;
+        line-height: 130px
     }
-
     header .titulo .bienestar {
         font-size: 70px;
         letter-spacing: -10px;
         line-height: 0;
-        height: 95px;
+        height: 95px
     }
-
     header .titulo .es {
         font-size: 35px;
-        line-height: 0;
+        line-height: 0
     }
-
     header .titulo .lo {
         font-size: 55px;
-        line-height: 70px;
+        line-height: 70px
     }
-
     header .titulo .vive {
         font-size: 25px;
         font-weight: 600;
         letter-spacing: 0;
-        line-height: 0;
+        line-height: 0
     }
-
     header .video {
         padding: 25px;
-        padding-top: 90px;
+        padding-top: 90px
     }
-
     header .video iframe {
         padding-left: 25px;
         width: 48%;
-        height: 250px;
-
+        height: 250px
     }
-
     .taller {
         padding: 25px;
         width: -webkit-calc(50% - 50px);
         width: -moz-calc(50% - 50px);
-        width: calc(50% - 50px);
+        width: calc(50% - 50px)
     }
-
     .sabados {
         width: 50%
     }
-
     .cabecera {
-        width: 100%;
+        width: 100%
     }
-
     .sabados .cuerpo {
         padding: 25px;
         width: -webkit-calc(100% - 50px);
         width: -moz-calc(100% - 50px);
-        width: calc(100% - 50px);
+        width: calc(100% - 50px)
     }
-
     .sabados .cabecera .cuatro p {
-        font-size: 200px;
+        font-size: 200px
     }
-
     .sabados .cabecera .texto p {
-        font-size: 40px;
+        font-size: 40px
     }
-
     .sabados .cabecera .duracion {
         padding: 10px;
         width: -webkit-calc(100% - 20px);
         width: -moz-calc(100% - 20px);
-        width: calc(100% - 20px);
+        width: calc(100% - 20px)
     }
-
     .fotos {
-        width: 100%;
+        width: 100%
     }
-
     .fotos .thirdPage {
-        width: 100%;
+        width: 100%
     }
-
     .fotos .uno {
-        height: 260px;
+        height: 260px
     }
-
     .fotos {
-        height: auto;
+        height: auto
     }
-
     .testimoniales {
         width: calc(100% - 20px);
         width: -webkit-calc(100% - 20px);
         width: -moz-calc(100% - 20px);
-        padding: 10px;
+        padding: 10px
     }
-
-
-
     .testimoniales .thirdPage {
-        width: 50%;
+        width: 50%
     }
-
     .testimoniales .texto {
-        padding: 10px;
+        padding: 10px
     }
-
     .testimoniales .uno {
-        padding-top: 5px;
+        padding-top: 5px
     }
-
     .testimoniales .dos {
-        padding-top: 5px;
+        padding-top: 5px
     }
-
     .testimoniales .tres {
-        padding-top: 5px;
+        padding-top: 5px
     }
-
-
-
 }
 
-
-/*  =====  RESPONSIVE - 768px > 460px Tablet  =====  */
-
 @media screen and (max-width:768px) and (min-width:460px) {
-
-
-
     .wrapper {
-        width: 100%;
+        width: 100%
     }
-
-    /*  =====  HEAD  =====  */
     header {
         width: 100%;
         height: 780px;
         padding: 0;
-        background: #989c9d;
+        background: #989c9d
     }
-
     header .imagen {
         width: 20%;
-        height: auto;
+        height: auto
     }
-
     header .titulo {
         width: 70%;
         padding-top: 30px;
-        padding-left: 0px;
+        padding-left: 0;
         height: auto;
-        padding-bottom: 0;
+        padding-bottom: 0
     }
-
     header .titulo {
-        margin: 0;
+        margin: 0
     }
-
     header .titulo .el {
         font-size: 65px;
-        line-height: 120px;
+        line-height: 120px
     }
-
     header .titulo .bienestar {
         font-size: 80px;
         letter-spacing: -10px;
-        line-height: 0;
+        line-height: 0
     }
-
     header .titulo .es {
         font-size: 45px;
-        line-height: 0;
+        line-height: 0
     }
-
     header .titulo .lo {
         font-size: 65px;
-        line-height: 70px;
+        line-height: 70px
     }
-
     header .titulo .vive {
         font-size: 30px;
         font-weight: 600;
-        letter-spacing: 1px;
+        letter-spacing: 1px
     }
-
     header .video {
         padding: 0;
         padding-left: 15px;
         height: 360px;
         width: 90%;
-        margin-right: 0;
+        margin-right: 0
     }
-
-
     .halfPage {
-        width: 100%;
+        width: 100%
     }
-
     .sabado .halfPage {
-        width: 50%;
+        width: 50%
     }
-
     header .video iframe {
-
         width: 100%;
-        height: 315px;
-
+        height: 315px
     }
-
     .taller .halfPage {
         width: 50%
     }
-
     .sabados {
-        width: 100%;
+        width: 100%
     }
-
     .taller {
         background: #bcbdc0;
         color: #3f3f40;
         padding: 30px;
         padding-bottom: 31px;
         width: 90%;
-        font-size: 23px;
+        font-size: 23px
     }
-
     .info {
         font-size: 20px;
-        letter-spacing: -1px;
+        letter-spacing: -1px
     }
-
     .info p {
-        margin: 0;
+        margin: 0
     }
-
     .info .caja.forthPage {
         width: -moz-calc(100% - 30px);
         width: -webkit-calc(100% - 30px);
-        width: calc(100% - 30px);
+        width: calc(100% - 30px)
     }
-
     .info .caja {
         min-height: 150px;
-        padding: 0;
-
+        padding: 0
     }
-
     .info div:first-of-type.caja::after {
-        display: none;
+        display: none
     }
-
     .info div:nth-of-type(2).caja::after {
-        display: none;
+        display: none
     }
-
     .info div:nth-of-type(3).caja::after {
-        display: none;
+        display: none
     }
-
     .fotos {
-        width: 100%;
+        width: 100%
     }
-
-
-
     .fotos .thirdPage {
-        width: 100%;
+        width: 100%
     }
-
     .fotos .uno {
-        height: 260px;
+        height: 260px
     }
-
     .fotos {
-        height: auto;
+        height: auto
     }
-
     .listaa {
-        height: 145px;
+        height: 145px
     }
-
     .listab {
-        padding-top: 0;
+        padding-top: 0
     }
-
     .testimoniales {
         width: calc(100% - 20px);
         width: -webkit-calc(100% - 20px);
         width: -moz-calc(100% - 20px);
-        padding: 10px;
+        padding: 10px
     }
-
-
-
     .testimoniales .thirdPage {
-        width: 50%;
+        width: 50%
     }
-
     .testimoniales .texto {
-        padding: 10px;
+        padding: 10px
     }
-
     .testimoniales .uno {
-        padding-top: 5px;
+        padding-top: 5px
     }
-
     .testimoniales .dos {
-        padding-top: 5px;
+        padding-top: 5px
     }
-
     .testimoniales .tres {
-        padding-top: 5px;
+        padding-top: 5px
     }
-
     .info .caja {
         min-height: auto;
         position: relative;
-        padding: 15px;
-
+        padding: 15px
     }
-
 }
 
 @media screen and (orientation:portrait) and (min-width:460px) and (max-width:585px) {
-
     header {
-        height: 670px;
+        height: 670px
     }
-
     header .titulo .vive {
         font-size: 20px;
         font-weight: 600;
-        letter-spacing: 1px;
+        letter-spacing: 1px
     }
-
     header .video {
         padding: 0;
         padding-left: 0;
         height: 360px;
         width: 90%;
-        margin-right: 0;
+        margin-right: 0
     }
-
     header .video iframe {
-
         width: 100%;
-        height: 205px;
-
+        height: 205px
     }
-
     .listaa {
-        height: 230px;
+        height: 230px
     }
-
     .fotos .thirdPage {
-        width: 100%;
+        width: 100%
     }
-
     .fotos .uno {
-        height: 260px;
+        height: 260px
     }
-
     .fotos {
-        height: auto;
+        height: auto
     }
-
     .testimoniales {
         width: calc(100% - 20px);
         width: -webkit-calc(100% - 20px);
-        width: -moz-calc(100% - 20px);
+        width: -moz-calc(100% - 20px)
     }
-
     .testimoniales h2 {
-        font-size: 40px;
+        font-size: 40px
     }
-
     .taller {
-        padding: 10px;
+        padding: 10px
     }
-
     header .titulo .lo {
         font-size: 50px;
-        line-height: 50px;
+        line-height: 50px
     }
-
     .caja {
-        padding: 10px 0;
+        padding: 10px 0
     }
-
     .info div:nth-of-type(2).caja::after {
-        display: none;
-
+        display: none
     }
     .forthPage {
-        width: 50%;
+        width: 50%
     }
-
     .testimoniales .thirdPage {
-        width: 100%;
+        width: 100%
     }
-
     .testimoniales .uno {
-        padding-top: 5px;
+        padding-top: 5px
     }
-
     .testimoniales .dos {
-        padding-top: 5px;
+        padding-top: 5px
     }
-
     .testimoniales .tres {
-        padding-top: 5px;
+        padding-top: 5px
     }
-
 }
 
-
-/*  =====  RESPONSIVE - 459px > 100px - Big Mobile / Mobile  =====  */
-
 @media screen and (orientation:portrait) and (min-width:100px) and (max-width:459px) {
-
-
     html {
-        font-size: 20px;
+        font-size: 20px
     }
-
     .wrapper {
-        width: 100%;
+        width: 100%
     }
-
     h2 {
         margin: 0;
         font-size: 40px;
@@ -1008,107 +840,82 @@ a.cta-medium:hover {
         padding: 20px;
         padding-left: 20px;
         padding-bottom: 0;
-        padding-top: 10;
+        padding-top: 10
     }
-
     .halfPage {
-        width: 100%;
+        width: 100%
     }
-
     .thirdPage {
-        width: 100%;
+        width: 100%
     }
-
     .forthPage {
-        width: 50%;
+        width: 50%
     }
-
-    /*  =====  HEAD  =====  */
     header {
         width: 100%;
         height: 670px;
         padding: 0;
-        background: #989c9d;
+        background: #989c9d
     }
-
     header .imagen {
         width: 0;
-        height: auto;
+        height: auto
     }
-
     header .titulo {
         width: 100%;
         padding-top: 5px;
         padding-left: 0;
-        height: 450px;
+        height: 450px
     }
-
-
     header .titulo .el {
-        font-size: 50px;
+        font-size: 50px
     }
-
     header .titulo .bienestar {
         font-size: 70px;
         letter-spacing: -10px;
-        line-height: 25px;
+        line-height: 25px
     }
-
     header .titulo .es {
         font-size: 30px;
-        line-height: 5px;
+        line-height: 5px
     }
-
     header .titulo .lo {
         font-size: 50px;
-        line-height: 50px;
+        line-height: 50px
     }
-
     header .titulo .vive {
         font-size: 20px;
         font-weight: 600;
-        letter-spacing: 1px;
+        letter-spacing: 1px
     }
-
     header.video {
         padding: 0;
-        margin: 0;
+        margin: 0
     }
-
     header .video iframe {
-
         height: 130px;
         width: 280px;
         margin: 0;
-        padding-left: 0;
-
+        padding-left: 0
     }
-
     .sabado .halfPage {
-        width: 50%;
+        width: 50%
     }
-
-
     .taller .halfPage {
         width: 50%
     }
-
     .taller {
         width: -webkit-calc(100% - 10px);
         width: -moz-calc(100% - 10px);
         width: calc(100% - 10px);
-        padding-left: 10px;
+        padding-left: 10px
     }
-
-
     .sabados {
-        width: 100%;
+        width: 100%
     }
-
     .sabados .cuerpo {
-        padding-right: 0;
+        padding-right: 0
     }
-
     .cabecera .cuatro p {
         width: 30%;
         font-weight: 700;
@@ -1117,148 +924,112 @@ a.cta-medium:hover {
         margin: 0;
         letter-spacing: 0;
         padding-left: 30px;
-        padding-top: 15px;
-
+        padding-top: 15px
     }
-
     .cabecera .cuatro {
-        height: 200px;
+        height: 200px
     }
-
-
-
     .cabecera .duracion {
         width: 100%;
-        font-size: 20px;
+        font-size: 20px
     }
-
     .sabados .cuerpo .cuatro {
         margin-top: 0;
         font-size: 30px;
         line-height: 30px;
-        font-weight: 300;
+        font-weight: 300
     }
-
     .sabados .cuerpo .tres {
         margin-top: 0;
         font-size: 30px;
         line-height: 30px;
-        font-weight: 700;
+        font-weight: 700
     }
-
     .taller {
         background: #bcbdc0;
         color: #3f3f40;
         padding: 10px;
         padding-bottom: 31px;
-        width: 80%;
+        width: 80%
     }
-
     .taller p {
-        font-size: 20px;
+        font-size: 20px
     }
-
-
     taller h3 {
-        font-size: 10px;
+        font-size: 10px
     }
-
-
     .info .caja.forthPage {
         width: -moz-calc(100% - 30px);
         width: -webkit-calc(100% - 30px);
-        width: calc(100% - 30px);
+        width: calc(100% - 30px)
     }
-
     .info .caja {
         min-height: auto;
         position: relative;
-        padding: 15px;
-
+        padding: 15px
     }
-
     .info div:first-of-type.caja::after {
-        display: none;
+        display: none
     }
-
     .info div:nth-of-type(2).caja::after {
-        display: none;
+        display: none
     }
-
     .info div:nth-of-type(3).caja::after {
-        display: none;
+        display: none
     }
-
     .info div:nth-of-type(2).caja::after {
-        display: none;
+        display: none
     }
-
     .temario {
         padding: 0;
-        font-size: 20px;
+        font-size: 20px
     }
-
     .testimoniales {
-        padding: 10px;
-
+        padding: 10px
     }
     .testimoniales h2 {
-        font-size: 28px;
+        font-size: 28px
     }
-
     .testimoniales .texto {
         padding: 10px;
-        font-size: 20px;
-
+        font-size: 20px
     }
-
     .testimoniales .thirdPage {
-        width: 100%;
+        width: 100%
     }
-
-
     .testimoniales .uno {
-        padding-top: 5px;
+        padding-top: 5px
     }
-
     .testimoniales .dos {
-        padding-top: 5px;
+        padding-top: 5px
     }
-
     .testimoniales .tres {
-        padding-top: 5px;
+        padding-top: 5px
     }
-
     .fotos .thirdPage {
-        width: 100%;
+        width: 100%
     }
-
     .fotos .uno {
         height: auto;
-        width: 100%;
+        width: 100%
     }
-
     .fotos {
         height: auto;
-        width: 100%;
+        width: 100%
     }
-
     .fotos img {
         height: auto;
-        width: 100%;
+        width: 100%
     }
-
     .listaa {
-        height: 190px;
+        height: 190px
     }
-
     .listab {
-        padding-top: 0;
+        padding-top: 0
     }
-
     .cabecera .texto p {
         padding-top: 8px;
         font-size: 30px;
-        line-height: 40px;
+        line-height: 40px
     }
 }
