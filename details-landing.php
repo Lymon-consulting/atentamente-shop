@@ -190,7 +190,7 @@ if(isset($_SESSION["products"])){
                         </div>
                         <div class="cuerpo left">
                             <article>
-                                <p class="uno">Aprovecha esta oportunidad para conocerte mejor y desarollarte al máximo.</p>
+                                <p class="uno">Aprovecha esta oportunidad para conocerte mejor y desarrollarte al máximo.</p>
                                 <p class="dos">PARA QUE TENGAS UNA IDEA MÁS CLARA SOBRE LO QUE APRENDERÁS EN EL TALLER</p>
                                 <p class="tres txtBold">Te compartimos la liga de la sesión informativa:</p>
                                 <p class="txtBold">Puedes conectarte en el siguente enlace: <a class="enlace" href="https://www.facebook.com/AtentaMenteMX/videos/1466269186808055/">https://www.facebook.com/AtentaMenteMX</a></p>
