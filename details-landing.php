@@ -221,110 +221,119 @@ if(isset($_SESSION["products"])){
                         <p>Psic. Lourdes<br/> Gómez Paz</p>
                     </div>
                 </div>
-                <div class="left temario">
-                    <div class="halfPage left">
-                        <div class="left linea">
-                            <h2>TEMARIO</h2>
-                        </div> <img src="img/temario.png" class="img" />
-                        <div class="left listaa">
-                            <ol>
-                                <li><span class="gris">El mapa y la ruta.</span></li>
-                                <li><span class="gris">Establecer la dirección y emprender el viaje.</span></li>
-                                <li><span class="gris">El papel de la mente.</span></li>
-                                <li><span class="gris">Profundizando el papel de la mente.</span></li>
-                                <li><span class="gris">La importancia de entrenar la atención.</span></li>
+                <div style="width: 100%; height: auto; padding: 25px 0; background: #BCBDC0" class="clearFix">
+                    <div class="item-box">
+                        <input name="product_code" value="TP101" type="hidden">
+                        <a class="btn" href="https://atentamente.iliux.com/shop/view_cart.php?item=TP101">COMPRAR EL CURSO PRESENCIAL DE 16 HORAS</a>
+                    </div>
+                    <div class="item-box">
+                        <input name="product_code" value="TP102" type="hidden">
+                        <a class="btn" href="https://atentamente.iliux.com/shop/view_cart.php?item=TP102">COMPRAR CURSOS ONLINE (VÍA LIVE STREAMING) DE 16 HORAS</a>
+                    </div>
+                    <div class="left temario">
+                        <div class="halfPage left">
+                            <div class="left linea">
+                                <h2>TEMARIO</h2>
+                            </div> <img src="img/temario.png" class="img" />
+                            <div class="left listaa">
+                                <ol>
+                                    <li><span class="gris">El mapa y la ruta.</span></li>
+                                    <li><span class="gris">Establecer la dirección y emprender el viaje.</span></li>
+                                    <li><span class="gris">El papel de la mente.</span></li>
+                                    <li><span class="gris">Profundizando el papel de la mente.</span></li>
+                                    <li><span class="gris">La importancia de entrenar la atención.</span></li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="halfPage left listab">
+                            <ol start="6">
+                                <li><span class="gris">Cómo entrenar la atención.</span></li>
+                                <li><span class="gris">Trabajar con las dificultades de la práctica.</span></li>
+                                <li><span class="gris">Consejos prácticos y consejos en el entrenamiento.</span></li>
+                                <li><span class="gris">Disipar la confusión.</span></li>
+                                <li><span class="gris">Cultiva una mente clara.</span></li>
+                                <li><span class="gris">La naturaleza cambiante de las cosas.</span></li>
+                                <li><span class="gris">Diferentes herramientas, múltiples soluciones.</span></li>
                             </ol>
                         </div>
                     </div>
-                    <div class="halfPage left listab">
-                        <ol start="6">
-                            <li><span class="gris">Cómo entrenar la atención.</span></li>
-                            <li><span class="gris">Trabajar con las dificultades de la práctica.</span></li>
-                            <li><span class="gris">Consejos prácticos y consejos en el entrenamiento.</span></li>
-                            <li><span class="gris">Disipar la confusión.</span></li>
-                            <li><span class="gris">Cultiva una mente clara.</span></li>
-                            <li><span class="gris">La naturaleza cambiante de las cosas.</span></li>
-                            <li><span class="gris">Diferentes herramientas, múltiples soluciones.</span></li>
-                        </ol>
+                    <div>
+                        <div class="left fotos txtCenter fondo">
+                            <div class="thirdPage left uno"> <img src="img/uno.jpg" /> </div>
+                            <div class="thirdPage left uno"> <img src="img/dos.jpg" /> </div>
+                            <div class="thirdPage left uno"> <img src="img/tres.jpg" /> </div>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="left fotos txtCenter fondo">
-                        <div class="thirdPage left uno"> <img src="img/uno.jpg" /> </div>
-                        <div class="thirdPage left uno"> <img src="img/dos.jpg" /> </div>
-                        <div class="thirdPage left uno"> <img src="img/tres.jpg" /> </div>
-                    </div>
-                </div>
-                <div class="testimoniales left">
-                    <div class="titulo left">
+                    <div class="testimoniales left">
+                        <div class="titulo left">
+                            <div class="left">
+                                <h2>TESTIMONIALES</h2>
+                            </div>
+                            <div class="img left"> <img src="img/test.png" /> </div>
+                        </div>
                         <div class="left">
-                            <h2>TESTIMONIALES</h2>
-                        </div>
-                        <div class="img left"> <img src="img/test.png" /> </div>
-                    </div>
-                    <div class="left">
-                        <div class="left thirdPage">
-                            <div>
-                                <p class="texto"> “Con este curso he aprendido a ser más analítico y tranquilo para abordar las situaciones, lo que me permite ser más asertivo”. </p>
+                            <div class="left thirdPage">
+                                <div>
+                                    <p class="texto"> “Con este curso he aprendido a ser más analítico y tranquilo para abordar las situaciones, lo que me permite ser más asertivo”. </p>
+                                </div>
+                                <div class="uno">
+                                    <p class="txtBold texto"> -Álvaro SHCP- </p>
+                                </div>
                             </div>
-                            <div class="uno">
-                                <p class="txtBold texto"> -Álvaro SHCP- </p>
+                            <div class="left thirdPage">
+                                <div>
+                                    <p class="texto"> "Estar más atenta en mis acciones, en mi visión de mí misma. Controlar mi estrés, mi día acelerado, estra más relajada". </p>
+                                </div>
+                                <div class="dos">
+                                    <p class="txtBold texto"> -Maestra Instituto Docet, Nuevo León- </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="left thirdPage">
-                            <div>
-                                <p class="texto"> "Estar más atenta en mis acciones, en mi visión de mí misma. Controlar mi estrés, mi día acelerado, estra más relajada". </p>
-                            </div>
-                            <div class="dos">
-                                <p class="txtBold texto"> -Maestra Instituto Docet, Nuevo León- </p>
-                            </div>
-                        </div>
-                        <div class="left thirdPage">
-                            <div>
-                                <p class="texto"> "Esto es justo lo que los niños necesitan hoy en día qu están sometidos a tantos estímulos." </p>
-                            </div>
-                            <div class="tres">
-                                <p class="txtBold texto"> -Mamá Montessori de la Condesa, D.F.- </p>
+                            <div class="left thirdPage">
+                                <div>
+                                    <p class="texto"> "Esto es justo lo que los niños necesitan hoy en día qu están sometidos a tantos estímulos." </p>
+                                </div>
+                                <div class="tres">
+                                    <p class="txtBold texto"> -Mamá Montessori de la Condesa, D.F.- </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <br />
-        <footer id="footer">
-            <div class="container mx-auto">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6 column">
-                        <h4 class="footer-text">Políticas</h4>
-                        <ul class="list-group">
-                            <li><a href="cancel.php">Política de Cancelación</a></li>
-                            <li><a href="#">Política de Entrega</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6 col-md-6 column">
-                        <h4 class="footer-text">¿Cómo podemos ayudarte?</h4>
-                        <ul class="nav">
-                            <li><a href="mailto:ayuda@atentamente.org.mx">ayuda@atentamente.org.mx</a></li>
-                        </ul>
+            <br />
+            <footer id="footer">
+                <div class="container mx-auto">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 column">
+                            <h4 class="footer-text">Políticas</h4>
+                            <ul class="list-group">
+                                <li><a href="cancel.php">Política de Cancelación</a></li>
+                                <li><a href="#">Política de Entrega</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6 col-md-6 column">
+                            <h4 class="footer-text">¿Cómo podemos ayudarte?</h4>
+                            <ul class="nav">
+                                <li><a href="mailto:ayuda@atentamente.org.mx">ayuda@atentamente.org.mx</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Plugin JavaScript -->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-        <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+            <!-- Plugin JavaScript -->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+            <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-        <!-- Custom scripts for this template -->
-        <script src="js/creative.min.js"></script>
-        
-        <link href="css/styles.min.css" rel="stylesheet" type="text/css">
+            <!-- Custom scripts for this template -->
+            <script src="js/creative.min.js"></script>
+
+            <link href="css/styles.min.css" rel="stylesheet" type="text/css">
             <script src="https://ajax.googleapis.com/ajax/libs/webspan/1.6.26/webspan.js"></script>
             <script>
                 Webspan.load({
