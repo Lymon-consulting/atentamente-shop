@@ -137,7 +137,7 @@ if(isset($_SESSION["products"])){
         </div>
 
 
-        <div class="container mx-auto">
+        <div class="container mx-auto clearFix">
 
             <!-- //////////////////  Wrapper LP campaña Google Ads  //////////// -->
             <div class="wrapper">
