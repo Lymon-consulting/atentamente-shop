@@ -221,15 +221,16 @@ if(isset($_SESSION["products"])){
                         <p>Psic. Lourdes<br/> Gómez Paz</p>
                     </div>
                 </div>
-                <div style="width: 100%; height: auto; padding: 25px 0; background: #BCBDC0" class="clearFix">
-                    <div class="item-box">
+                <div style="width: 100%; height: auto; padding: 25px 0; background: #FFFFFF" class="clearFix">
+                    <div class="halfPage left" style="text-align: center; padding: 25px 0;">
                         <input name="product_code" value="TP101" type="hidden">
-                        <a class="btn" href="https://atentamente.iliux.com/shop/view_cart.php?item=TP101">COMPRAR EL CURSO PRESENCIAL DE 16 HORAS</a>
+                        <a style="font-weight: 700;" href="https://atentamente.iliux.com/shop/view_cart.php?item=TP101">COMPRAR EL CURSO PRESENCIAL DE 16 HORAS</a>
                     </div>
-                    <div class="item-box">
+                    <div class="halfPage left" style="text-align: center; padding: 25px 0;">
                         <input name="product_code" value="TP102" type="hidden">
-                        <a class="btn" href="https://atentamente.iliux.com/shop/view_cart.php?item=TP102">COMPRAR CURSOS ONLINE (VÍA LIVE STREAMING) DE 16 HORAS</a>
+                        <a style="font-weight: 700;"  href="https://atentamente.iliux.com/shop/view_cart.php?item=TP102">COMPRAR EL CURSO ONLINE (LIVE STREAMING) DE 16 HORAS</a>
                     </div>
+                </div>
                     <div class="left temario">
                         <div class="halfPage left">
                             <div class="left linea">
