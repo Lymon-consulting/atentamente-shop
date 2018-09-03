@@ -34,7 +34,7 @@
 
 
 
-<div class="header-row" id="header-row" style="padding: 0px; overflow:hidden; height:320px;">
+<div class="header-row" id="header-row" style="padding: 0px; overflow:hidden; height:220px;">
         <!-- container-fluid is the same as container but spans a wider viewport, 
     it still has padding though so you need to remove this either by adding 
     another class with no padding or inline as I did below -->
@@ -47,7 +47,7 @@
          <div class="col-xs-12"> 
             <a class="navbar-brand logo" href="index.php">
         <!-- place your image here -->
-               <img src="images/image1.png" class="img-fluid" alt="AtentaMente" style="width: 100%;">
+               <img src="images/banner_tienda.jpg" class="img-fluid" alt="AtentaMente">
             </a> 
          </div>     
       </div>

@@ -129,7 +129,7 @@ if(isset($_SESSION["products"])){
          <div class="col-xs-12"> 
             <a class="navbar-brand logo" href="index.php">
         <!-- place your image here -->
-               <img src="images/image1.png" class="img-fluid" alt="AtentaMente" style="width: 100%;">
+               <img src="images/banner_tienda.jpg" class="img-fluid" alt="AtentaMente">
             </a> 
          </div>     
       </div>
@@ -220,7 +220,28 @@ $row = $results->fetch_assoc();
             <div class="item-box">
                
                 <input name="product_code" type="hidden" value="<?=$row["product_code"]?>">
-                <a class="btn" href="https://atentamente.iliux.com/shop/view_cart.php?item=<?=$row["product_code"]?>">Comprar</a>
+                <?php 
+            if($row["id"]==2){
+          ?>
+          <a class="btn" href="https://play.google.com/store/books/details/iBooks_Author_2_6_Trabajar_y_Vivir_en_Equilibrio_M?id=grtoDwAAQBAJ">Comprar</a>
+         <?php 
+            }
+            else if($row["id"]==3){
+          ?>
+          <a class="btn" href="https://play.google.com/store/books/details/iBooks_Author_2_6_TRABAJAR_Y_VIVIR_EN_EQUILIBRIO?id=srtoDwAAQBAJ">Comprar</a>
+         <?php 
+            }
+            else if($row["id"]==4){
+          ?>          
+          <a class="btn" href="https://play.google.com/store/books/details/iBooks_Author_2_6_Trabajar_y_Vivir_en_Equilibrio_M?id=wrtoDwAAQBAJ">Comprar</a>
+          <?php 
+            }
+            else{
+          ?>          
+          <a class="btn" href="https://atentamente.iliux.com/shop/view_cart.php?item=<?=$row["product_code"]?>">Comprar</a>
+          <?php
+            }
+          ?>
                 <a href="index.php" class="btn btn-outline-secondary" role="button" aria-pressed="true">Regresar a la tienda</a>
             </div>
             <!--</form>-->

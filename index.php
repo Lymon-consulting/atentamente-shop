@@ -273,7 +273,7 @@ if(isset($_SESSION["products"])){
 <?php
 //Establece la codificación de la base de datos en utf8 para procesar acentos y caracteres especiales
 $acentos = $mysqli_conn->query("SET NAMES 'utf8'");
-$query = "SELECT id, product_name, product_code, product_image, special_product, category FROM products_list WHERE special_product = 1 ";
+$query = "SELECT id, product_name, product_code, product_image, special_product, category, status FROM products_list WHERE special_product = 1 AND status=1 ";
 
 if(isset($_GET["category"])){
    $val = $_GET["category"];
@@ -315,9 +315,9 @@ if (!$results){
 //Establece la codificación de la base de datos en utf8 para procesar acentos y caracteres especiales
 $acentos = $mysqli_conn->query("SET NAMES 'utf8'");
 
-$query = "SELECT id, product_name, product_desc, product_code, product_image, product_price, product_large, special_product, category FROM products_list";
+$query = "SELECT id, product_name, product_desc, product_code, product_image, product_price, product_large, special_product, category, status FROM products_list WHERE status=1";
 if(isset($_GET["category"])){
-   $query = $query . " WHERE category = " . $_GET["category"];
+   $query = $query . " AND category = " . $_GET["category"];
 }
 
 $query = $query . " ORDER BY product_order";
@@ -372,11 +372,32 @@ while($row = $results->fetch_assoc()) {
       
       <div class="description"><br><?=$row["product_desc"]?></div>
       <div class="price">Precio : <?=$currency?> <?=$row["product_price"]?> <?php if($row["id"]==1) echo " (Incluye 3 licencias)"; ?> <div>
-      <?php if($row["id"]==1) echo "<div class='price'>Licencia adicional $ 1750</div>"; ?> <?php if($row["id"]==13) echo " (Precio con descuento del 15% hasta agosto 17)"; ?> <div> <?php if($row["id"]==1) echo " (Incluye 3 licencias)"; ?> <div> <?php if($row["id"]==14 || $row["id"]==15 || $row["id"]==16 || $row["id"]==17) echo " (Precio por pronto pago hasta el 17 de septiembre)"; ?> <div>
+      <?php if($row["id"]==1) echo "<div class='price'>Licencia adicional $ 1750</div>"; ?> <?php if($row["id"]==13) echo " (Precio con descuento del 15% últimos días)"; ?> <div> <?php if($row["id"]==1) echo " (Incluye 3 licencias)"; ?> <div> <?php if($row["id"]==14 || $row["id"]==15 || $row["id"]==16 || $row["id"]==17) echo " (Precio por pronto pago hasta el 17 de septiembre)"; ?> <div>
       <div class="item-box">
          
           <input name="product_code" type="hidden" value="<?=$row["product_code"]?>">
+          <?php 
+            if($row["id"]==2){
+          ?>
+          <a class="btn" href="https://play.google.com/store/books/details/iBooks_Author_2_6_Trabajar_y_Vivir_en_Equilibrio_M?id=grtoDwAAQBAJ">Comprar</a>
+         <?php 
+            }
+            else if($row["id"]==3){
+          ?>
+          <a class="btn" href="https://play.google.com/store/books/details/iBooks_Author_2_6_TRABAJAR_Y_VIVIR_EN_EQUILIBRIO?id=srtoDwAAQBAJ">Comprar</a>
+         <?php 
+            }
+            else if($row["id"]==4){
+          ?>          
+          <a class="btn" href="https://play.google.com/store/books/details/iBooks_Author_2_6_Trabajar_y_Vivir_en_Equilibrio_M?id=wrtoDwAAQBAJ">Comprar</a>
+          <?php 
+            }
+            else{
+          ?>          
           <a class="btn" href="https://atentamente.iliux.com/shop/view_cart.php?item=<?=$row["product_code"]?>">Comprar</a>
+          <?php
+            }
+          ?>
           <?php
            if ($row["product_large"]!=null and strlen($row["product_large"])>0){
             //echo "<button type=\"button\">Más información</button>";
