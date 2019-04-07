@@ -217,6 +217,7 @@ $row = $results->fetch_assoc();
             
             <div class="description"><br><?=$row["product_large"]?></div>
             <div class="price">Precio : <?=$currency?> <?=$row["product_price"]?><div>
+            <?php if($row["id"]==19) echo " <div class='price'>(Pronto pago hasta el 1 de octubre: $1,600)</div>"; ?>   
             <div class="item-box">
                
                 <input name="product_code" type="hidden" value="<?=$row["product_code"]?>">

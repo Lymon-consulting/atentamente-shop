@@ -196,18 +196,21 @@ if(isset($_SESSION["products"])){
 
 <div class="container">
    <div class="row blog">
-       <div class="col-md-12 product-title text-center">
-            <br/>¿Deseas hacer un donativo a nuestra organización? Utiliza el siguiente botón:<br/>
+       <div class="col-md-12">
+         <div id="blogCarousel" class="product-title" data-ride="carousel">
+            ¿Deseas hacer un donativo a nuestra organización? Utiliza el siguiente botón:
+         </div>
        </div>
    </div>
-   <div class="row blog text-center">
+   <div class="row blog">
        <div class="col-md-12">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><br/>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick">
             <input type="hidden" name="hosted_button_id" value="F575VWSKJF6ME">
             <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
-            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1"><br/>
+            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
             </form>
+
        </div>
    </div>
 </div>
